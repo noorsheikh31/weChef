@@ -1,0 +1,187 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+    color: #ededed;
+    background: white;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:rgb(247, 234, 234);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+     position: relative;
+     font-size: 50px;
+     font-style:italic;
+     color: #e10c0c;
+     text-decoration:none;
+     font-weight: 600;
+     cursor: default;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+     color: rgb(31, 25, 25);
+     text-decoration: none;
+     font-weight: 500;
+     margin-left: 35px;
+     transition: .3s;
+}
+.navbar a:hover{
+    color: #f80505;
+    
+     
+}
+.Receipes-content{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(https://wallpaperaccess.com/full/2882747.jpg) no-repeat;  
+    background-size: cover;
+    background-position: center;
+    display: block;
+    align-items: center;
+    padding: 50px 10% 0;
+
+} 
+ 
+
+.card-container {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.recipe-card {
+  background-color: #fffdfc;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.recipe-card h2{
+    font-size: 25px;
+    color: black;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.show-btn:hover ,.start-btn:hover{
+   color: #f14510 ;
+}
+
+.show-btn, .start-btn {
+  background-color: #e1811a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+ul {
+  color: #212128;
+  margin-top: 20px;
+  list-style: square;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.recipe-card h3,ol,p{
+    font-size: 15px;
+    color: black;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #aaa3b2;
+  border-radius: 6px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress {
+  width: 30%;
+  background-color: #e1811a;
+  height: 100%;
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer{
+  background-color: #212128;
+  padding: 70px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.contact-text h2{
+  padding: 20px;
+  font-size: 30px;
+}
+.footer p{
+  align-items: center;
+  font-size: 15px;
+  color: #fffdfc;
+}
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background :transparent;
+    border: 2px solid rgb(213, 94, 31);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(213, 94, 31);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+   }
+    .contact-icons i:hover{
+        background: rgb(213, 94, 31);
+        color: #000;
+        box-shadow: 0 0 20px rgb(213, 94, 31);
+
+    }
+
+
+
+
+
+
+
+
